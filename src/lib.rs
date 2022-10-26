@@ -8,7 +8,7 @@ use std::fs;
     impl God{
         pub fn init(amount: usize) -> Self {
             Self {
-                words: Self::getWords("words.txt"),
+                words: Self::getWords("./words.txt"),
                 amount,
             }
         }
