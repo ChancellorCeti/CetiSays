@@ -2,12 +2,13 @@
 name = "KairavSays"
 version = "0.1.0"
 edition = "2021"
-default-run = "godsays-server"
+default-run = "KairavSays"
+required-features = ["server"]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [features]
 server = ["hyper", "tokio", "pretty_env_logger"]
-
+default = ["server"]
 [dependencies]
 fastrand = "1.8.0"
 rust-embed = "6.4"
